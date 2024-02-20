@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <div class="container_form">
+
+        <form class="form" action="#" method="post">
+
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Ex: Ana" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="sobrenome" class="form_label">Sobrenome</label>
+                <input type="text" name="sobrenome" class="form_input" id="sobrenome" placeholder="Ex: Maria da Silva" required>
+            </div>
+
+            <div class="form_grupo_email">
+                <label for="email" class="form_label">Email</label>
+                <input type="email" name="email" class="form_input" id="email" placeholder="Ex: maria.silva.iplace@icloud.com   " required>
+            </div>
+
+            <div class="form_grupo_telefone">
+                <label for="telefone" class="form_label">DDD + Telefone</label>
+                <input type="text" name="telefone" class="form_input" id="telefone" placeholder="Ex: 02169993771353" required>
+            </div>
+
+            <div class="form_grupo_cidade">
+                <label for="cidade" class="form_label">Cidade</label>
+                <input type="text" name="cidade" class="form_input" id="cidade" placeholder="Ex: São Paulo" required>
+            </div>
+
+            <div class="form_grupo_estado">
+
+                <label for="estado" class="titulo_estado">Estado</label>
+                <select id="estado" class="dropdown" name="estado">
+                    <option disabled selected class="text">Selecione um estado</option>
+                    <option value="AC" class="nome_estado">Acre</option>
+                    <option value="AL" class="nome_estado">Alagoas</option>
+                    <option value="AP" class="nome_estado">Amapá</option>
+                    <option value="AM" class="nome_estado">Amazonas</option>
+                    <option value="BA" class="nome_estado">Bahia</option>
+                    <option value="CE" class="nome_estado">Ceará</option>
+                    <option value="DF" class="nome_estado">Distrito Federal</option>
+                    <option value="ES" class="nome_estado">Espírito Santo</option>
+                    <option value="GO" class="nome_estado">Goiás</option>
+                    <option value="MA" class="nome_estado">Maranhão</option>
+                    <option value="MT" class="nome_estado">Mato Grosso</option>
+                    <option value="MS" class="nome_estado">Mato Grosso do Sul</option>
+                    <option value="MG" class="nome_estado">Minas Gerais</option>
+                    <option value="PA" class="nome_estado">Pará</option>
+                    <option value="PB" class="nome_estado">Paraíba</option>
+                    <option value="PR" class="nome_estado">Paraná</option>
+                    <option value="PE" class="nome_estado">Pernambuco</option>
+                    <option value="PI" class="nome_estado">Piauí</option>
+                    <option value="RJ" class="nome_estado">Rio de Janeiro</option>
+                    <option value="RN" class="nome_estado">Rio Grande do Norte</option>
+                    <option value="RS" class="nome_estado">Rio Grande do Sul</option>
+                    <option value="RO" class="nome_estado">Rondônia</option>
+                    <option value="RR" class="nome_estado">Roraima</option>
+                    <option value="SC" class="nome_estado">Santa Catarina</option>
+                    <option value="SP" class="nome_estado">São Paulo</option>
+                    <option value="SE" class="nome_estado">Sergipe</option>
+                    <option value="TO" class="nome_estado">Tocantins</option>
+                </select>
+            </div>
+            <p>Quais ofertas você gostaria de receber?</p>
+            <hr>
+
+            <div class="container">
+                <div class="clicavelDiv" onclick="minhaFuncao(this)">
+                    <img src="./img/Iphone.png" class="imagem" alt="Iphone">
+                    <div class="texto-abaixo-imagem">Iphone</div>
+                </div>
+                <div class="clicavelDiv" onclick="minhaFuncao(this)">
+                    <img src="./img/mac.png" class="imagem" alt="Mac">
+                    <div class="texto-abaixo-imagem">Mac</div>
+                </div>
+                <div class="clicavelDiv" onclick="minhaFuncao(this)">
+                    <img src="./img/ipad.png" class="imagem" alt="Ipad">
+                    <div class="texto-abaixo-imagem">Ipad</div>
+                </div>
+                <div class="clicavelDiv" onclick="minhaFuncao(this)">
+                    <img src="./img/watch.png" class="imagem" alt="Apple Watch">
+                    <div class="texto-abaixo-imagem">Apple Watch</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="clicavelDiv" onclick="minhaFuncao(this)">
+                    <img src="./img/airpods.png" class="imagem" alt="Airpods">
+                    <div class="texto-abaixo-imagem">Airpods</div>
+                </div>
+                <div class="clicavelDiv" onclick="minhaFuncao(this)">
+                    <img src="./img/apple_tv.png" class="imagem" alt="Apple TV">
+                    <div class="texto-abaixo-imagem">Apple TV</div>
+                </div>
+                <div class="clicavelDiv" onclick="minhaFuncao(this)">
+                    <img src="./img/acessorio_carregador.png" class="imagem" alt="Acessórios">
+                    <div class="texto-abaixo-imagem">Acessórios</div>
+                </div>
+                <div class="clicavelDiv" onclick="minhaFuncao(this)">
+                    <img src="./img/originais_iplace.png" class="imagem" alt="Originais Iplace">
+                    <div class="texto-abaixo-imagem">Originais Iplace</div>
+                </div>
+            </div>
+            <div class="botoes-container">
+                <button class="clear" type="button" onclick="limparCampos()">Limpar dados</button>
+                <button class="create" type="submit" onclick="confirmarCadastro()">Confirmar cadastro</button>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

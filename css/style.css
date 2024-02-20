@@ -1,0 +1,155 @@
+.container_form {
+
+    width: 700px;
+    margin: auto;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    background:#ffffff; 
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+    border-radius:3px; 
+    padding:3em;
+
+}
+
+.dropdown {
+    font-size: 16px;
+    font-family: arial;
+    padding: 15px 0px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 1px #f2f2f2 solid;
+    background: #eceaea;
+    outline: none;
+    width: 39vh;
+    transition: all 0.3s;
+    display: inline-block; 
+    vertical-align: middle; 
+    color: gray;
+}
+
+.form_grupo_email{
+    width: 450px;
+    display: inline-block; 
+    
+}
+
+.form_grupo_telefone{
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-left: 20px;
+    width: 225px;
+}
+
+.form_input {
+    font-size: 16px;
+    font-family: arial;
+    padding: 15px 4px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 1px #f2f2f2 solid;
+    background: #eceaea;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s;
+
+}
+
+.form_grupo_cidade{
+    width: 450px;
+    display: inline-block;
+}
+
+.form_grupo_estado{
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-left: 20px;
+    width: 225px;
+}
+
+p{
+    font-family: arial;
+    font-weight: normal;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+.clicavelDiv {
+    cursor: pointer;
+    transition: box-shadow 0.1s;
+    background: cover;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 5px 0px;
+    width: 100px;
+    height: 130px;
+    font-size: 14px;
+}
+.clicavelDiv:active {
+    box-shadow: 0 0 10px rgb(187, 168, 1);
+    border-color: rgb(187, 168, 1); 
+}
+
+
+.clicavelDiv.selecionado {
+    color: rgb(187, 168, 1); 
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: rgb(187, 168, 1);
+    justify-content: space-between;
+}
+
+
+.texto-abaixo-imagem{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.imagem {
+    width: 100px;
+    height: 100px;
+}
+
+.create {
+    border-radius: 15px; 
+    padding: 10px 145px; 
+    background-color: #404040; 
+    color: white; 
+    border: 2px solid #404040;
+    text-align: center; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+}
+
+
+.clear {
+    border-radius: 15px; 
+    padding: 10px 80px; 
+    background-color: white; 
+    color: rgb(84, 83, 83); 
+    border: 2px solid rgb(181, 181, 181);
+    text-align: center; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nome_estado{
+    color: black;
+}
+
+
